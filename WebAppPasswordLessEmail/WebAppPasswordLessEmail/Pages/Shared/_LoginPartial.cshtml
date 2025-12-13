@@ -17,7 +17,8 @@
             Hello, @displayName
         </li>
         <li class="nav-item">
-            <form class="form-inline" asp-page="/Auth/Logout" method="post">
+            <form class="form-inline" asp-controller="Auth" asp-action="Logout" method="post">
+                @Html.AntiForgeryToken()
                 <button type="submit" class="nav-link btn btn-link text-dark">Log off</button>
             </form>
         </li>
@@ -27,7 +28,7 @@ else
 {
     <ul class="navbar-nav navbar-right">
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-page="/Auth/Login">Log in</a>
+            <a class="nav-link text-dark" asp-controller="Auth" asp-action="Login">Log in</a>
         </li>
     </ul>
 }
