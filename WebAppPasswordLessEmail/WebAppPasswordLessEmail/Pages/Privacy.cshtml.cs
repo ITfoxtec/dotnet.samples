@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebAppPasswordLessEmail.Pages
 {
@@ -9,5 +8,4 @@ namespace WebAppPasswordLessEmail.Pages
         {
         }
     }
-
 }
