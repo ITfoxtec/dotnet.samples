@@ -1,21 +1,6 @@
-@{
-    var displayName = User.FindFirst("name")?.Value;
-    if (string.IsNullOrWhiteSpace(displayName))
-    {
-        displayName = $"{User.FindFirst("given_name")?.Value} {User.FindFirst("family_name")?.Value}";
-    }
-    if (string.IsNullOrWhiteSpace(displayName))
-    {
-        displayName = User.FindFirst("preferred_username")?.Value;
-    }
-}
-
 @if (User.Identity?.IsAuthenticated == true)
 {
     <ul class="navbar-nav">
-        <li class="navbar-text">
-            Hello, @displayName
-        </li>
         <li class="nav-item">
             <form class="form-inline" asp-controller="Auth" asp-action="Logout" method="post">
                 @Html.AntiForgeryToken()
