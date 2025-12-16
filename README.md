@@ -9,7 +9,7 @@ The examples are intended as lightweight, easy-to-understand reference implement
 ### ASP.NET Core Passwordless Authentication with FoxIDs (Email OTP)
 Folder: [WebAppPasswordLessEmail](WebAppPasswordLessEmail)  
 This sample demonstrates how to authenticate users in an ASP.NET Core application using FoxIDs with OpenID Connect and a passwordless flow based on one-time codes sent via email.  
-A detailed walkthrough is available in the Medium article: 
+A detailed walkthrough is available in the Medium article:  
 **[Passwordless Authentication in ASP.NET Core with FoxIDs and Email-based OTP](https://medium.com/@anders.revsgaard/passwordless-authentication-in-asp-net-core-with-foxids-and-email-based-otp-c8b85c1c80cd)**.
 
 Key features:
@@ -17,6 +17,20 @@ Key features:
 - OpenID Connect integration with FoxIDs  
 - Minimal Razor Pages app (works similarly in MVC or Blazor)  
 - Runs locally on https://localhost:7283  
+
+### Passwordless Authentication in an AI-Generated ASP.NET Core App with FoxIDs and Email-Based OTP
+Folder: [WebAppPasswordLessEmailAI](WebAppPasswordLessEmailAI)  
+This sample shows how an **AI-generated** ASP.NET Core application can be integrated with FoxIDs to support passwordless authentication using one-time codes delivered by email.  
+It illustrates how AI-assisted code generation can be combined with secure identity workflows.
+
+A detailed explanation of this version is available in the Medium article:  
+**[Passwordless Authentication in an AI-Generated ASP.NET Core App with FoxIDs and Email-based OTP](https://medium.com/@anders.revsgaard/passwordless-authentication-in-an-ai-generated-asp-net-core-app-with-foxids-and-email-based-otp-b2053e2b498b)**.
+
+Key features:
+- AI-generated Razor Pages application structure  
+- Email-based OTP authentication  
+- OpenID Connect integration with FoxIDs  
+- Fully functional example running on https://localhost:7283  
 
 ## Get Started
 
