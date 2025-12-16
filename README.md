@@ -7,7 +7,7 @@ The examples are intended as lightweight, easy-to-understand reference implement
 ## Samples
 
 ### ASP.NET Core Passwordless Authentication with FoxIDs (Email OTP)
-Folder: **WebAppPasswordLessEmail**  
+Folder: [WebAppPasswordLessEmail](WebAppPasswordLessEmail)
 This sample demonstrates how to authenticate users in an ASP.NET Core application using FoxIDs with OpenID Connect and a passwordless flow based on one-time codes sent via email.  
 A detailed walkthrough is available in the Medium article:  
 **[Passwordless Authentication in ASP.NET Core with FoxIDs and Email-based OTP](https://medium.com/@anders.revsgaard/passwordless-authentication-in-asp-net-core-with-foxids-and-email-based-otp-c8b85c1c80cd)**.
