@@ -1,0 +1,18 @@
+@if (User.Identity?.IsAuthenticated ?? false)
+{
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <form class="d-inline" asp-controller="Auth" asp-action="Logout" method="post" asp-antiforgery="true">
+                <button type="submit" class="btn btn-link nav-link text-dark">Log off</button>
+            </form>
+        </li>
+    </ul>
+}
+else
+{
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-controller="Auth" asp-action="Login">Log in</a>
+        </li>
+    </ul>
+}

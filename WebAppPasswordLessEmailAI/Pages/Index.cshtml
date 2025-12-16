@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+@if (User.Identity?.IsAuthenticated ?? false)
+{
+    <p class="mt-4">You are signed in.</p>
+
+    <h2 class="h4 mt-4">Your claims</h2>
+    <div class="table-responsive">
+        <table class="table table-sm table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var claim in User.Claims)
+            {
+                <tr>
+                    <td><code>@claim.Type</code></td>
+                    <td>@claim.Value</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p class="mt-4">
+        You are not signed in. Click <a asp-controller="Auth" asp-action="Login">Log in</a> to authenticate.
+    </p>
+}
